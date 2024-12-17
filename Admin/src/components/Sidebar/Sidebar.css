@@ -1,0 +1,86 @@
+/* Sidebar Styles */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    width: 100%;
+    max-width: 300px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    transition: max-width 0.3s ease;
+  }
+  
+  .sidebar:hover {
+    max-width: 320px;
+  }
+  
+  /* Sidebar Item Styles */
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: #f9f9f9;
+    gap: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item:hover {
+    background: #e8e8e8;
+    transform: scale(1.02);
+  }
+  
+  .item:active {
+    transform: scale(0.98);
+  }
+  
+  /* Icon and Text Alignment */
+  .item img, .item svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .item span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    white-space: nowrap;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      max-width: 220px;
+    }
+  
+    .item {
+      gap: 10px;
+      padding: 8px 12px;
+    }
+  
+    .item span {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      max-width: 200px;
+      padding: 15px;
+    }
+  
+    .item {
+      padding: 6px 10px;
+    }
+  
+    .item span {
+      font-size: 0.8rem;
+    }
+  }
+  
